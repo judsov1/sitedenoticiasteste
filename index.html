@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Digital Curator | Editorial Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;0,6..72,800;1,6..72,800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#74777d",
+              "on-surface": "#181c1e",
+              "tertiary-container": "#410004",
+              "secondary": "#545f72",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2d3133",
+              "on-primary-fixed": "#0f1c2c",
+              "outline-variant": "#c4c6cc",
+              "surface-dim": "#d7dadc",
+              "on-primary": "#ffffff",
+              "primary-fixed": "#d6e4f9",
+              "surface-container-highest": "#e0e3e5",
+              "on-secondary-fixed-variant": "#3c475a",
+              "surface-container-low": "#f1f4f6",
+              "surface-tint": "#525f71",
+              "on-primary-fixed-variant": "#3a4859",
+              "on-tertiary-container": "#ef4544",
+              "primary": "#000000",
+              "on-background": "#181c1e",
+              "tertiary": "#000000",
+              "on-secondary-fixed": "#111c2c",
+              "primary-container": "#0f1c2c",
+              "on-surface-variant": "#44474c",
+              "surface": "#f7fafc",
+              "on-tertiary-fixed": "#410004",
+              "on-secondary-container": "#586377",
+              "inverse-primary": "#bac8dc",
+              "inverse-on-surface": "#eef1f3",
+              "tertiary-fixed": "#ffdad7",
+              "on-tertiary": "#ffffff",
+              "secondary-container": "#d5e0f7",
+              "primary-fixed-dim": "#bac8dc",
+              "surface-bright": "#f7fafc",
+              "background": "#f7fafc",
+              "surface-container-high": "#e5e9eb",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#930013",
+              "surface-variant": "#e0e3e5",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#778598",
+              "on-error": "#ffffff",
+              "surface-container": "#ebeef0",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#bcc7dd",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#d8e3fa",
+              "tertiary-fixed-dim": "#ffb3ad"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f7fafc]/70 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black italic tracking-tighter text-[#0d1b2a]">The Digital Curator</div>
+<div class="hidden md:flex items-center space-x-8 font-['Newsreader'] font-bold text-lg tracking-tight">
+<a class="text-[#0d1b2a] border-b-2 border-[#0d1b2a] pb-1" href="#">Mundo</a>
+<a class="text-[#778598] hover:text-[#0d1b2a] transition-colors" href="#">Economia</a>
+<a class="text-[#778598] hover:text-[#0d1b2a] transition-colors" href="#">Cultura</a>
+<a class="text-[#778598] hover:text-[#0d1b2a] transition-colors" href="#">Tecnologia</a>
+<a class="text-[#778598] hover:text-[#0d1b2a] transition-colors" href="#">Ciência</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-[#0d1b2a] cursor-pointer hover:opacity-80 transition-opacity">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden rounded-lg group">
+<img alt="Satellite view of Earth" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="cinematic wide angle shot of earth at night from space with glowing city lights and nebula in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhZUFbKTyNGCMPfPHW8XfnM5p6tfRi2pVuPaPaDrZryfXxbJW7uiu7AULSlVAxu6-va7qxm9-mw-yYQRL2MoSKH1-sJ87oe44t4RfLsGOggpjkdyiL_hbjmhCb2ShYzMtQ1WyPfHK19PX2f_4MYyYW04RYJcBWVblU-Jib9L8w3JyM2dpPeJg16HBpFY6rWwD6hUPFkZPF1kQ90wAsaiMyX2CwAjpQlQXOLx_28gMbW688KZr7UV5uLxBNwtJtIvLXLyCR5kyYaYM"/>
+<div class="absolute top-6 left-6">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 text-xs font-bold tracking-widest uppercase">Especial</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-center">
+<span class="text-on-tertiary-container font-bold text-sm tracking-widest uppercase mb-4">Mundo Digital</span>
+<h1 class="font-headline font-extrabold text-5xl md:text-6xl leading-[1.1] text-primary-container mb-6 -tracking-wider">
+                    A Inteligência Artificial e o Futuro do Jornalismo Curado.
+                </h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-8">
+                    Como algoritmos de processamento de linguagem estão redefinindo o que significa ser um editor no século XXI, equilibrando precisão técnica com o toque humano essencial.
+                </p>
+<div>
+<button class="bg-primary-container text-on-primary px-8 py-3 rounded-lg font-medium hover:bg-on-primary-fixed-variant transition-colors duration-200">
+                        Ler Manchete Completa
+                    </button>
+</div>
+</div>
+</section>
+<!-- Category Section Header -->
+<div class="flex items-end justify-between mb-12 border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline font-bold text-3xl text-primary-container">Destaques Recentes</h2>
+<div class="flex space-x-6 font-body text-sm font-semibold text-on-primary-container">
+<button class="hover:text-primary transition-colors border-b-2 border-primary">Tudo</button>
+<button class="hover:text-primary transition-colors">Política</button>
+<button class="hover:text-primary transition-colors">Tech</button>
+<button class="hover:text-primary transition-colors">Estilo</button>
+</div>
+</div>
+<!-- Bento Grid for Articles -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Article Card 1 -->
+<article class="flex flex-col">
+<div class="relative mb-6 overflow-hidden rounded-lg">
+<img alt="Modern Architecture" class="w-full aspect-[4/3] object-cover" data-alt="low angle shot of a sleek glass skyscraper reflecting a clear blue sky with minimal architectural lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv-gxAlP0Z6FiEGvUxB4jk3XB4tLLV59Fun9xO8tNx_AAH3QIlYbPKlcdXrYysSyTHQqWCvZ7P_IbRUIE6zf3wI13-O80Bgl9TQ3CHM7OYZd4X2pUvq7Ue3Dp2SCu5JNgaNB_oe2Zbt6nH1GqDZrIVYMk_1U0HpAZBRJqsaCKIcir8LZPEz6COJcXywURRDRE0GYSwshVHO5zKkKiDuEZEIHJZpNR957IlLm-k8uzgIJGc4930fZBdnZEIcAnZeF3zND4mx2iZ7gk"/>
+</div>
+<span class="text-on-tertiary-container font-bold text-[10px] tracking-[0.2em] uppercase mb-2">Economia</span>
+<h3 class="font-headline font-bold text-xl text-primary-container mb-3 leading-tight hover:underline cursor-pointer">
+                    Cidades Inteligentes: O Novo Paradigma Urbano.
+                </h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                    Investimentos massivos em infraestrutura conectada prometem transformar o cotidiano nas metrópoles globais até 2030.
+                </p>
+<a class="text-xs font-bold uppercase tracking-widest text-primary-container hover:opacity-70 transition-opacity" href="#">Continuar Lendo</a>
+</article>
+<!-- Article Card 2 -->
+<article class="flex flex-col">
+<div class="relative mb-6 overflow-hidden rounded-lg">
+<img alt="Retro Tech" class="w-full aspect-[4/3] object-cover" data-alt="aesthetic arrangement of retro tech hardware like floppy disks and old computers in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN_NRzcrhNOv_M-BwfIsK73C3wQjh4Mab1c-RJr0yAT_bHZBmN4B5UOFR-_XXh7fdIv7X2isLUUtMNpjxpYffzVPp51dyDLaRzLoDypUEo_HwKkPAQ4kqi1RzYSUInF6mlvtJhM2QpyNtrbUq2dp-95d551wz9G_OP2XaG7vkoYPVVLLE0oGxwCk-FwiU1jv8ApiC2JRVCT7I6NSCgFgWKXx5N0LYen4B6B3vSoFwO627EiPBlHY0Sos-30K45xOduoWnsNH8ML1I"/>
+</div>
+<span class="text-on-tertiary-container font-bold text-[10px] tracking-[0.2em] uppercase mb-2">Tecnologia</span>
+<h3 class="font-headline font-bold text-xl text-primary-container mb-3 leading-tight hover:underline cursor-pointer">
+                    O Renascimento Analógico em um Mundo Digital.
+                </h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                    Por que a geração Z está abandonando os smartphones em favor de câmeras vintage e vinis? A busca pela tangibilidade.
+                </p>
+<a class="text-xs font-bold uppercase tracking-widest text-primary-container hover:opacity-70 transition-opacity" href="#">Continuar Lendo</a>
+</article>
+<!-- Article Card 3 -->
+<article class="flex flex-col">
+<div class="relative mb-6 overflow-hidden rounded-lg">
+<img alt="Minimalist Design" class="w-full aspect-[4/3] object-cover" data-alt="still life of a single minimalist white designer watch on a clean gray surface with soft natural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz3UmSBxNKvMNLNsj-mxb8oXwnMlm8k0ivfMAovv0YbbI88wC7i-WLAbbebek3wc5yRw-IBCzW0nYvtwqHOFkbouqOcu4-wixPJ3ChKOL6L3o8rWn6F67oGnqSOXWwDJtKpXEX-0bkfL_tl_C5i1lXwMUoQvugbi2OFNbQmHvXNaffh2d8gQ9mOeJUU1YakBETwGlU7GjNLZwNbgx77pytU37EG4bdu60-aefUohn11CmC58RmKY5Iz6xCK7xD2om7kZFWPUeDtYc"/>
+</div>
+<span class="text-on-tertiary-container font-bold text-[10px] tracking-[0.2em] uppercase mb-2">Cultura</span>
+<h3 class="font-headline font-bold text-xl text-primary-container mb-3 leading-tight hover:underline cursor-pointer">
+                    Minimalismo: Mais que uma Estética, um Manifesto.
+                </h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">
+                    Explorando como o design simplificado está influenciando o comportamento de consumo e a saúde mental moderna.
+                </p>
+<a class="text-xs font-bold uppercase tracking-widest text-primary-container hover:opacity-70 transition-opacity" href="#">Continuar Lendo</a>
+</article>
+</div>
+<!-- Secondary Section: Featured List with Ghost Borders -->
+<section class="mt-28 grid grid-cols-1 lg:grid-cols-3 gap-16">
+<div class="lg:col-span-2 space-y-12">
+<h4 class="font-headline font-bold text-2xl mb-8">Análise Profunda</h4>
+<div class="flex flex-col md:flex-row gap-8 items-start group cursor-pointer">
+<img class="w-full md:w-48 h-32 object-cover rounded-lg" data-alt="person using a futuristic glass touchpad in a dark room with subtle blue data visualizations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz7-S_4tYdAeIszJOn45NoKlLzsaFMGq9q9jSKzEwNahsQYX7bFwzCNbwBOx0RoU2v4xGiq6LPMPeK1v6TESkpkSceuMv3RfOwTHkIHNBuoG_qO8suXMxxsJhEi0IE_3MZqTVEomQ0Gm-7bGYcf2S8RksIIsP-unc8hSSmsmyYKH60YgG1zbEXcf_euan9EeEGJc1-dp2Ut-tOWbMUeKy6ns_SmiNk2sTL31KZAjonM7d7LJe_dUMcSftwqAyvon8mkmasmiB9QgA"/>
+<div>
+<span class="text-on-primary-container text-[10px] font-bold uppercase tracking-widest">Segurança Digital</span>
+<h5 class="font-headline font-bold text-2xl mt-1 mb-2 group-hover:text-primary transition-colors">A Criptografia no Limiar da Era Quântica.</h5>
+<p class="text-sm text-on-surface-variant font-body leading-relaxed">Entenda como a computação quântica ameaça os fundamentos da privacidade online e as novas defesas sendo construídas.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-start group cursor-pointer">
+<img class="w-full md:w-48 h-32 object-cover rounded-lg" data-alt="overhead shot of a designer studio with fabric swatches, sketches, and high-end fashion magazines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqrbj3QCo-6bT0oNInimTlZEf_rn9XZc4YItC0_ulI8QxTSxCrKbzHmXtBDSIxoV930ECPZpxAvEMz35x1BI95Q_mHWrLIg4RqkgZ6hgn4eJOP5Fv-lIjc01Loo1TYWDwggWlVNbOBcBx7f4qo6RWe0YBvqS82n6HYEW17ZtBN_Zah3i5tbv7Lq3I0VCEuX65C82I95NeVfcOO-Wdbt1oBh6DCewtKUP_saTpa9ZLRt0vIR193fGSW1UQAhXg9ki6s9G6OvJbxP9s"/>
+<div>
+<span class="text-on-primary-container text-[10px] font-bold uppercase tracking-widest">Indústria</span>
+<h5 class="font-headline font-bold text-2xl mt-1 mb-2 group-hover:text-primary transition-colors">Moda Sustentável: O Fim do Fast Fashion?</h5>
+<p class="text-sm text-on-surface-variant font-body leading-relaxed">O impacto das novas regulamentações europeias sobre a transparência da cadeia de suprimentos têxtil global.</p>
+</div>
+</div>
+</div>
+<aside class="bg-surface-container p-8 rounded-lg">
+<h4 class="font-headline font-bold text-xl mb-6">Newsletter Editorial</h4>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">
+                    Receba semanalmente uma curadoria das histórias que realmente importam, diretamente na sua caixa de entrada.
+                </p>
+<div class="flex flex-col space-y-4">
+<input class="bg-surface-container-low border-none focus:ring-1 focus:ring-outline p-3 text-sm rounded-lg" placeholder="seu@email.com" type="email"/>
+<button class="bg-primary-container text-on-primary w-full py-3 rounded-lg font-bold text-xs uppercase tracking-widest">Inscrever-se</button>
+</div>
+<p class="text-[10px] text-on-primary-container mt-4 text-center">Respeitamos sua privacidade. Cancele quando quiser.</p>
+</aside>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-[#ebeef0]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-['Newsreader'] font-bold text-xl text-[#0d1b2a]">The Digital Curator</div>
+<p class="text-[#3a4859] text-xs mt-2">Editorial Intelligence for the modern age.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-sm leading-6 mb-8 md:mb-0">
+<a class="text-[#3a4859] hover:text-[#0d1b2a] transition-colors" href="#">Privacidade</a>
+<a class="text-[#3a4859] hover:text-[#0d1b2a] transition-colors" href="#">Termos</a>
+<a class="text-[#3a4859] hover:text-[#0d1b2a] transition-colors" href="#">Contato</a>
+<a class="text-[#3a4859] hover:text-[#0d1b2a] transition-colors" href="#">Newsletter</a>
+<a class="text-[#3a4859] hover:text-[#0d1b2a] transition-colors" href="#">Arquivo</a>
+</div>
+<div class="text-[#3a4859] text-[10px] uppercase tracking-widest font-bold">
+                © 2024 The Digital Curator.
+            </div>
+</div>
+</footer>
+</body></html>
